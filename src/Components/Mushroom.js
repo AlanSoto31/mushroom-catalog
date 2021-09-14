@@ -20,13 +20,11 @@ const Mushroom = ({ mushroom }) => (
             {mushroom.edibility}
           </span>
         </Card.Text>
-
         <Card.Text>
           <span>
             {mushroom.description}
           </span>
         </Card.Text>
-
       </Card.Body>
     </Card>
   </Col>
