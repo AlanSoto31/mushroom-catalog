@@ -1,22 +1,21 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Mushroom from '../Components/Mushroom';
+import mushroomList from '../Components/mushrooms';
 
 const MushroomList = () => {
-  const mushroom = {
-    id: 1,
-    name: 'Horse',
-    img_url: 'https://www.first-nature.com/fungi/images/agaricaceae/agaricus-arvensis1.jpg',
-    description: 'Agaricus arvensis appears in manured meadows and beside bridle paths and other places where there is plenty of decaying organic matter, upon which it feeds saprophytically.',
-    scientific_name: 'Agaricus arvensis',
-    wiki_url: 'https://en.wikipedia.org/wiki/Agaricus_arvensis',
-    edibility: 'Edible and good',
-    dimensions: 'Cap 8-20 cm diameter, stem 8-10 cm tall * 2-3 cm diameter',
-    location: 'North America, Europe',
-  };
+  const mushrooms = mushroomList.map(
+    (mushroom) => <Mushroom key={mushroom.name} mushroom={mushroom} />,
+  );
 
   return (
     <>
-      <Mushroom mushroom={mushroom} />
+      <Container className="mt-4">
+        <Row className="g-4">
+          { mushrooms }
+        </Row>
+      </Container>
     </>
   );
 };
