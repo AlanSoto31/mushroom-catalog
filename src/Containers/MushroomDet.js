@@ -5,10 +5,10 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import mushroomList from '../Components/mushrooms';
+import { useSelector } from 'react-redux';
 
 const MushroomDet = () => {
+  const mushroomList = useSelector((state) => state.mushrooms.list);
   const { id } = useParams();
   const mushDet = mushroomList.find((mushroom) => mushroom.id === parseInt(id, 10));
 
