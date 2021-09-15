@@ -1,7 +1,5 @@
-import mushroomList from './mushrooms';
-
 const defaultState = {
-  list: mushroomList,
+  list: [],
 };
 
 const MushroomReducer = (state = defaultState, { type, payload }) => {
