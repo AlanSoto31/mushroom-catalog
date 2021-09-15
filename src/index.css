@@ -7,6 +7,22 @@
   box-sizing: border-box;
   text-decoration: none;
   }
+
+  body {
+    background: url('https://i0.wp.com/www.corpuscoli.com/wp-content/uploads/2016/05/The-Growing-Lab-Mycelia-%C2%A9Officina-Corpuscoli-Maurizio-Montalti-pure-mycelium-pattern2.jpg?resize=1200%2C800') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .nav-home {
+    font-size: 25px;
+    color: #323C9A;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .main-title {
+    color: whitesmoke;
+  }
   
   .mushroomList-card-img {
     height: 300px;

@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = () => (
-  <Nav className="navbar navbar-light bg-light d-flex justify-content-center align-content-center">
-    <div>
-      <Link className="navbar-brand" to="/"><p className="nav-home text-center">Home</p></Link>
-    </div>
-  </Nav>
+const NavBar = () => (
+  <Navbar sticky="top" bg="white" className="navbar d-flex justify-content-center align-content-center">
+    <Link className="nav-home text-center" to="/">Home</Link>
+  </Navbar>
 );
 
-export default Navbar;
+export default NavBar;
